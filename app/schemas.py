@@ -17,7 +17,7 @@ class ColorMatchRequest(BaseModel):
     )
     dye_class: Literal["auto", "reactive", "disperse"] = Field(
         default="auto",
-        description="Auto-maps polyester/nylon/acetate to Vibrasperse Disperse and cellulosics to Chroma Reactive",
+        description="Auto-maps polyester/nylon/acetate to Disperse Dyes and cellulosics to Reactive Dyes",
     )
     require_zdhc_bluesign: bool = Field(
         default=True,
@@ -35,7 +35,7 @@ class DyeRecipeOutput(BaseModel):
         description="Engine that generated the formulation",
     )
     dye_class: Literal["reactive", "disperse"]
-    product_range: str = Field(..., description="Spectrum Dyes product line (Vibrasperse or Chroma)")
+    product_range: str = Field(..., description="Textile Dye Operations product line (Disperse or Chroma)")
     red_dye_pct: float = Field(..., description="Red dye percentage on weight of fabric (% owf)")
     yellow_dye_pct: float = Field(..., description="Yellow dye percentage on weight of fabric (% owf)")
     blue_dye_pct: float = Field(..., description="Blue dye percentage on weight of fabric (% owf)")

@@ -30,7 +30,7 @@ def test_chroma_reactive_cotton_prediction(client):
     assert response.status_code == 200
     data = response.json()
     assert data["dye_class"] == "reactive"
-    assert data["product_range"] == "Chroma Reactive"
+    assert data["product_range"] == "Reactive Dyes"
     assert data["prediction_source"] == "deterministic_fallback"
     assert data["salt_g_per_l"] > 0
     assert data["temperature_c"] == 60
@@ -50,7 +50,7 @@ def test_vibrasperse_disperse_polyester_prediction(client):
     assert response.status_code == 200
     data = response.json()
     assert data["dye_class"] == "disperse"
-    assert data["product_range"] == "Vibrasperse Disperse"
+    assert data["product_range"] == "Disperse Dyes"
     assert data["salt_g_per_l"] == 0.0
     assert data["dispersing_agent_g_per_l"] > 0
     assert data["temperature_c"] == 130

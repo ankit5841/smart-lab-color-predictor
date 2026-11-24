@@ -66,9 +66,9 @@ class RecipePredictionLog(Base):
 
 
 SEED_RECIPES = [
-    # Chroma Reactive Dyes (Cellulosics: Cotton, Linen, Viscose)
+    # Reactive Dyes (Cellulosics: Cotton, Linen, Viscose)
     {
-        "recipe_code": "CHR-101", "dye_class": "reactive", "product_range": "Chroma Reactive",
+        "recipe_code": "RCT-101", "dye_class": "reactive", "product_range": "Reactive Dyes",
         "fabric_type": "cotton", "fabric_gsm": 180, "liquor_ratio": "1:10",
         "target_L": 42.5, "target_a": 51.2, "target_b": 18.4,
         "red_dye_pct": 2.45, "yellow_dye_pct": 0.62, "blue_dye_pct": 0.08,
@@ -76,7 +76,7 @@ SEED_RECIPES = [
         "bath_ph": 10.8, "temperature_c": 60, "manual_trials_baseline": 5,
     },
     {
-        "recipe_code": "CHR-102", "dye_class": "reactive", "product_range": "Chroma Reactive",
+        "recipe_code": "RCT-102", "dye_class": "reactive", "product_range": "Reactive Dyes",
         "fabric_type": "cotton", "fabric_gsm": 195, "liquor_ratio": "1:10",
         "target_L": 44.2, "target_a": 49.0, "target_b": 16.8,
         "red_dye_pct": 2.25, "yellow_dye_pct": 0.56, "blue_dye_pct": 0.09,
@@ -84,7 +84,7 @@ SEED_RECIPES = [
         "bath_ph": 10.8, "temperature_c": 60, "manual_trials_baseline": 5,
     },
     {
-        "recipe_code": "CHR-103", "dye_class": "reactive", "product_range": "Chroma Reactive",
+        "recipe_code": "RCT-103", "dye_class": "reactive", "product_range": "Reactive Dyes",
         "fabric_type": "cotton", "fabric_gsm": 165, "liquor_ratio": "1:10",
         "target_L": 28.0, "target_a": 12.5, "target_b": -38.0,
         "red_dye_pct": 0.40, "yellow_dye_pct": 0.12, "blue_dye_pct": 3.10,
@@ -92,7 +92,7 @@ SEED_RECIPES = [
         "bath_ph": 11.0, "temperature_c": 60, "manual_trials_baseline": 6,
     },
     {
-        "recipe_code": "CHR-104", "dye_class": "reactive", "product_range": "Chroma Reactive",
+        "recipe_code": "RCT-104", "dye_class": "reactive", "product_range": "Reactive Dyes",
         "fabric_type": "cotton", "fabric_gsm": 170, "liquor_ratio": "1:10",
         "target_L": 29.8, "target_a": 11.2, "target_b": -36.2,
         "red_dye_pct": 0.36, "yellow_dye_pct": 0.10, "blue_dye_pct": 2.95,
@@ -100,7 +100,7 @@ SEED_RECIPES = [
         "bath_ph": 11.0, "temperature_c": 60, "manual_trials_baseline": 5,
     },
     {
-        "recipe_code": "CHR-105", "dye_class": "reactive", "product_range": "Chroma Reactive",
+        "recipe_code": "RCT-105", "dye_class": "reactive", "product_range": "Reactive Dyes",
         "fabric_type": "linen", "fabric_gsm": 190, "liquor_ratio": "1:10",
         "target_L": 60.2, "target_a": 4.1, "target_b": -22.5,
         "red_dye_pct": 0.22, "yellow_dye_pct": 0.08, "blue_dye_pct": 1.45,
@@ -108,16 +108,16 @@ SEED_RECIPES = [
         "bath_ph": 10.6, "temperature_c": 60, "manual_trials_baseline": 5,
     },
     {
-        "recipe_code": "CHR-106", "dye_class": "reactive", "product_range": "Chroma Reactive",
+        "recipe_code": "RCT-106", "dye_class": "reactive", "product_range": "Reactive Dyes",
         "fabric_type": "viscose", "fabric_gsm": 150, "liquor_ratio": "1:10",
         "target_L": 58.9, "target_a": 5.0, "target_b": -21.0,
         "red_dye_pct": 0.25, "yellow_dye_pct": 0.09, "blue_dye_pct": 1.52,
         "salt_g_per_l": 52.0, "soda_ash_g_per_l": 12.5, "dispersing_agent_g_per_l": 0.0,
         "bath_ph": 10.6, "temperature_c": 60, "manual_trials_baseline": 5,
     },
-    # Vibrasperse Disperse Dyes (Synthetics: Polyester, Nylon)
+    # Disperse Dyes (Synthetics: Polyester, Nylon)
     {
-        "recipe_code": "VBS-201", "dye_class": "disperse", "product_range": "Vibrasperse Disperse",
+        "recipe_code": "DSP-201", "dye_class": "disperse", "product_range": "Disperse Dyes",
         "fabric_type": "polyester", "fabric_gsm": 150, "liquor_ratio": "1:10",
         "target_L": 72.0, "target_a": -8.5, "target_b": 64.0,
         "red_dye_pct": 0.05, "yellow_dye_pct": 1.85, "blue_dye_pct": 0.14,
@@ -125,7 +125,7 @@ SEED_RECIPES = [
         "bath_ph": 4.8, "temperature_c": 130, "manual_trials_baseline": 5,
     },
     {
-        "recipe_code": "VBS-202", "dye_class": "disperse", "product_range": "Vibrasperse Disperse",
+        "recipe_code": "DSP-202", "dye_class": "disperse", "product_range": "Disperse Dyes",
         "fabric_type": "polyester", "fabric_gsm": 160, "liquor_ratio": "1:10",
         "target_L": 70.5, "target_a": -7.2, "target_b": 61.8,
         "red_dye_pct": 0.07, "yellow_dye_pct": 1.78, "blue_dye_pct": 0.16,
@@ -133,7 +133,7 @@ SEED_RECIPES = [
         "bath_ph": 4.8, "temperature_c": 130, "manual_trials_baseline": 5,
     },
     {
-        "recipe_code": "VBS-203", "dye_class": "disperse", "product_range": "Vibrasperse Disperse",
+        "recipe_code": "DSP-203", "dye_class": "disperse", "product_range": "Disperse Dyes",
         "fabric_type": "polyester", "fabric_gsm": 210, "liquor_ratio": "1:10",
         "target_L": 34.0, "target_a": 45.5, "target_b": 22.0,
         "red_dye_pct": 2.90, "yellow_dye_pct": 0.80, "blue_dye_pct": 0.15,
@@ -141,7 +141,7 @@ SEED_RECIPES = [
         "bath_ph": 4.6, "temperature_c": 130, "manual_trials_baseline": 6,
     },
     {
-        "recipe_code": "VBS-204", "dye_class": "disperse", "product_range": "Vibrasperse Disperse",
+        "recipe_code": "DSP-204", "dye_class": "disperse", "product_range": "Disperse Dyes",
         "fabric_type": "polyester", "fabric_gsm": 200, "liquor_ratio": "1:10",
         "target_L": 35.6, "target_a": 43.8, "target_b": 20.5,
         "red_dye_pct": 2.75, "yellow_dye_pct": 0.74, "blue_dye_pct": 0.14,
@@ -149,7 +149,7 @@ SEED_RECIPES = [
         "bath_ph": 4.6, "temperature_c": 130, "manual_trials_baseline": 5,
     },
     {
-        "recipe_code": "CHR-107", "dye_class": "reactive", "product_range": "Chroma Reactive",
+        "recipe_code": "RCT-107", "dye_class": "reactive", "product_range": "Reactive Dyes",
         "fabric_type": "cotton", "fabric_gsm": 175, "liquor_ratio": "1:10",
         "target_L": 48.0, "target_a": -34.5, "target_b": 24.0,
         "red_dye_pct": 0.12, "yellow_dye_pct": 1.65, "blue_dye_pct": 1.80,
@@ -157,7 +157,7 @@ SEED_RECIPES = [
         "bath_ph": 10.8, "temperature_c": 60, "manual_trials_baseline": 5,
     },
     {
-        "recipe_code": "CHR-108", "dye_class": "reactive", "product_range": "Chroma Reactive",
+        "recipe_code": "RCT-108", "dye_class": "reactive", "product_range": "Reactive Dyes",
         "fabric_type": "cotton", "fabric_gsm": 180, "liquor_ratio": "1:10",
         "target_L": 49.5, "target_a": -32.8, "target_b": 22.6,
         "red_dye_pct": 0.14, "yellow_dye_pct": 1.55, "blue_dye_pct": 1.72,
@@ -165,7 +165,7 @@ SEED_RECIPES = [
         "bath_ph": 10.8, "temperature_c": 60, "manual_trials_baseline": 5,
     },
     {
-        "recipe_code": "VBS-205", "dye_class": "disperse", "product_range": "Vibrasperse Disperse",
+        "recipe_code": "DSP-205", "dye_class": "disperse", "product_range": "Disperse Dyes",
         "fabric_type": "acetate", "fabric_gsm": 140, "liquor_ratio": "1:10",
         "target_L": 22.0, "target_a": 28.0, "target_b": -42.0,
         "red_dye_pct": 2.10, "yellow_dye_pct": 0.15, "blue_dye_pct": 3.40,

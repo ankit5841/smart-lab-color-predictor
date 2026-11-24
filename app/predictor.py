@@ -89,7 +89,7 @@ def generate_recipe_prediction(
     exclude_code: Optional[str] = None,
 ) -> DyeRecipeOutput:
     dye_class = resolve_dye_class(req)
-    product_range = "Vibrasperse Disperse" if dye_class == "disperse" else "Chroma Reactive"
+    product_range = "Disperse Dyes" if dye_class == "disperse" else "Reactive Dyes"
     nearest = find_nearest_historical_recipes(db, req, top_k=3, exclude_code=exclude_code)
     same_class_matches = [r for r in nearest if r["dye_class"] == dye_class] or nearest
 
@@ -98,9 +98,9 @@ def generate_recipe_prediction(
         try:
             client = OpenAI(api_key=api_key, timeout=10.0)
             system_prompt = (
-                "You are a textile coloration engineer at Spectrum Dyes & Chemicals. "
-                "Use Vibrasperse Disperse Dyes (130C, acidic pH ~4.8, dispersing agent, 0 salt/soda ash) "
-                "for synthetics and Chroma Reactive Dyes (60C, alkaline pH ~10.8, salt + soda ash) "
+                "You are a textile coloration engineer at a textile chemical manufacturer. "
+                "Use Disperse Dyes (130C, acidic pH ~4.8, dispersing agent, 0 salt/soda ash) "
+                "for synthetics and Reactive Dyes (60C, alkaline pH ~10.8, salt + soda ash) "
                 "for cellulosics. Return a structured DyeRecipeOutput grounded in the nearest validated recipes."
             )
             user_prompt = (

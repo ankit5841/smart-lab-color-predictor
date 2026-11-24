@@ -53,8 +53,8 @@ async def lifespan(_app: FastAPI):
 app = FastAPI(
     title="Smart-Lab Predictive Color-Matching API",
     description=(
-        "Production-grade predictive dye formulation service aligned with Spectrum Dyes & Chemicals "
-        "(Vibrasperse Disperse & Chroma Reactive ranges) with CIE LAB matching, "
+        "Production-grade predictive dye formulation service aligned with a textile chemical manufacturer "
+        "(Disperse Dyes & Reactive Dyes ranges) with CIE LAB matching, "
         "OpenAI structured outputs, graceful fallback, and live evaluation metrics."
     ),
     version="2.1.0",
